@@ -1,0 +1,23 @@
+{
+  "name": "todo-app-mysql",
+  "version": "1.0.0",
+  "description": "A simple todo app with mysql",
+  "main": "app.js",
+  "repository": "https://github.com/ebobzom/todo-app-mysql.git",
+  "author": "Elijah Bobzom <ebobzom@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node -r esm app.js"
+  },
+  "dependencies": {
+    "bcrypt": "^4.0.1",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "helmet": "^3.22.0",
+    "jsonwebtoken": "^8.5.1",
+    "mysql": "^2.18.1"
+  }
+}
