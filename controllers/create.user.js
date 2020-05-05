@@ -12,12 +12,12 @@ const create = (req,res) => {
     } = req.body;
 
     // check if user already exists
-    const queryString = 'SELECT user_Id from users WHERE ' + connection.escape(email);
+    const queryString = `SELECT user_Id from users WHERE ${email}`;
     connection.query(queryString, (err, results) => {
         if(err){
             res.status(401).json({
                 status: 'error',
-                error: error.message
+                error: err.message
             });
             return null;
         }
