@@ -12,7 +12,7 @@ const create = (req,res) => {
     } = req.body;
 
     // check if user already exists
-    const queryString = `SELECT user_Id from users WHERE ${email}`;
+    const queryString = `SELECT user_id from users WHERE ${email}`;
     connection.query(queryString, (err, results) => {
         if(err){
             res.status(401).json({
